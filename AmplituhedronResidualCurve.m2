@@ -43,7 +43,7 @@ E = ideal(CH(0)) + ideal(CH(2)) + ideal(CH(4)) + ideal(CH(6)) + ideal(CH(8)) + G
 codim sub(E,Gr), numgens trim sub(E,Gr)
 
 -- check smoothness
-decompose ideal singularLocus E : sub(ideal(gens R),Gr)
+(decompose ideal singularLocus E)#0 : sub(ideal(gens R),Gr)
 
 -- compute genus
 genus(Proj R/E)
